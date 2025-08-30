@@ -31,6 +31,7 @@
         qs = quickshell.packages.${system}.default.override {
           withX11 = false;
           withI3 = false;
+          withCrashReporter = false;
         };
 
         runtimeDeps = with pkgs; [
