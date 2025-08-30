@@ -29,9 +29,6 @@ import qs.Widgets
 
 ShellRoot {
   id: shellRoot
-
-  Background {}
-  Overview {}
   Bar {}
 
   Notification {
