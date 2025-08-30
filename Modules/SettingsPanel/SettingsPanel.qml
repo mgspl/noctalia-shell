@@ -22,15 +22,10 @@ NPanel {
     AudioService,
     Bar,
     Launcher,
-    Brightness,
-    ColorScheme,
     Display,
     General,
     Network,
-    ScreenRecorder,
-    TimeWeather,
-    Wallpaper,
-    WallpaperSelector
+    ScreenRecorder
   }
 
   property int requestedTab: SettingsPanel.Tab.General
@@ -54,10 +49,6 @@ NPanel {
     Tabs.AudioTab {}
   }
   Component {
-    id: brightnessTab
-    Tabs.BrightnessTab {}
-  }
-  Component {
     id: displayTab
     Tabs.DisplayTab {}
   }
@@ -66,28 +57,8 @@ NPanel {
     Tabs.NetworkTab {}
   }
   Component {
-    id: timeWeatherTab
-    Tabs.TimeWeatherTab {}
-  }
-  Component {
-    id: colorSchemeTab
-    Tabs.ColorSchemeTab {}
-  }
-  Component {
-    id: wallpaperTab
-    Tabs.WallpaperTab {}
-  }
-  Component {
-    id: wallpaperSelectorTab
-    Tabs.WallpaperSelectorTab {}
-  }
-  Component {
     id: screenRecorderTab
     Tabs.ScreenRecorderTab {}
-  }
-  Component {
-    id: aboutTab
-    Tabs.AboutTab {}
   }
 
   // Order *DOES* matter
@@ -122,40 +93,10 @@ NPanel {
       "icon": "lan",
       "source": networkTab
     }, {
-      "id": SettingsPanel.Tab.Brightness,
-      "label": "Brightness",
-      "icon": "brightness_6",
-      "source": brightnessTab
-    }, {
-      "id": SettingsPanel.Tab.TimeWeather,
-      "label": "Time & Weather",
-      "icon": "schedule",
-      "source": timeWeatherTab
-    }, {
-      "id": SettingsPanel.Tab.ColorScheme,
-      "label": "Color Scheme",
-      "icon": "palette",
-      "source": colorSchemeTab
-    }, {
-      "id": SettingsPanel.Tab.Wallpaper,
-      "label": "Wallpaper",
-      "icon": "image",
-      "source": wallpaperTab
-    }, {
-      "id": SettingsPanel.Tab.WallpaperSelector,
-      "label": "Wallpaper Selector",
-      "icon": "wallpaper_slideshow",
-      "source": wallpaperSelectorTab
-    }, {
       "id": SettingsPanel.Tab.ScreenRecorder,
       "label": "Screen Recorder",
       "icon": "videocam",
       "source": screenRecorderTab
-    }, {
-      "id": SettingsPanel.Tab.About,
-      "label": "About",
-      "icon": "info",
-      "source": aboutTab
     }]
 
   // When the panel opens, choose the appropriate tab

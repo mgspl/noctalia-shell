@@ -11,7 +11,7 @@ NPanel {
   id: panel
 
   panelWidth: 460 * scaling
-  panelHeight: 700 * scaling
+  panelHeight: 490 * scaling
   panelAnchorRight: true
 
   panelContent: Item {
@@ -36,9 +36,6 @@ NPanel {
 
       // Cards (consistent inter-card spacing via ColumnLayout spacing)
       ProfileCard {// Layout.topMargin: 0
-        // Layout.bottomMargin: 0
-      }
-      WeatherCard {// Layout.topMargin: 0
         // Layout.bottomMargin: 0
       }
 

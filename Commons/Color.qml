@@ -53,29 +53,29 @@ Singleton {
   }
 
   // --------------------------------
-  // Default colors: RosePine
+  // Default colors: Catppuccin Blue
   QtObject {
     id: defaultColors
 
-    property color mPrimary: "#c7a1d8"
-    property color mOnPrimary: "#1a151f"
+    property color mPrimary: "#89b4fa"
+    property color mOnPrimary: "#11111b"
 
-    property color mSecondary: "#a984c4"
-    property color mOnSecondary: "#f3edf7"
+    property color mSecondary: "#89b4fa"
+    property color mOnSecondary: "#11111b"
 
-    property color mTertiary: "#e0b7c9"
-    property color mOnTertiary: "#20161f"
+    property color mTertiary: "#89b4fa"
+    property color mOnTertiary: "#11111b"
 
-    property color mError: "#e9899d"
-    property color mOnError: "#1e1418"
+    property color mError: "#f38ba8"
+    property color mOnError: "#11111b"
 
-    property color mSurface: "#1c1822"
-    property color mOnSurface: "#e9e4f0"
+    property color mSurface: "#181825"
+    property color mOnSurface: "#89b4fa"
 
-    property color mSurfaceVariant: "#262130"
-    property color mOnSurfaceVariant: "#a79ab0"
+    property color mSurfaceVariant: "#1e1e2e"
+    property color mOnSurfaceVariant: "#89b4fa"
 
-    property color mOutline: "#342c42"
+    property color mOutline: "#89b4fa"
     property color mShadow: "#120f18"
   }
 

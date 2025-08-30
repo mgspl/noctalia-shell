@@ -16,9 +16,7 @@ import qs.Commons
 import qs.Modules.Launcher
 import qs.Modules.Background
 import qs.Modules.Bar
-import qs.Modules.BluetoothPanel
 import qs.Modules.Calendar
-import qs.Modules.Dock
 import qs.Modules.IPC
 import qs.Modules.LockScreen
 import qs.Modules.Notification
@@ -26,8 +24,6 @@ import qs.Modules.SettingsPanel
 import qs.Modules.PowerPanel
 import qs.Modules.SidePanel
 import qs.Modules.Toast
-import qs.Modules.WiFiPanel
-import qs.Modules.ArchUpdaterPanel
 import qs.Services
 import qs.Widgets
 
@@ -36,9 +32,7 @@ ShellRoot {
 
   Background {}
   Overview {}
-  ScreenCorners {}
   Bar {}
-  Dock {}
 
   Notification {
     id: notification
@@ -84,26 +78,8 @@ ShellRoot {
     objectName: "powerPanel"
   }
 
-  WiFiPanel {
-    id: wifiPanel
-    objectName: "wifiPanel"
-  }
-
-  BluetoothPanel {
-    id: bluetoothPanel
-    objectName: "bluetoothPanel"
-  }
-
-  ArchUpdaterPanel {
-    id: archUpdaterPanel
-    objectName: "archUpdaterPanel"
-  }
-
   Component.onCompleted: {
     // Save a ref. to our lockScreen so we can access it  easily
     PanelService.lockScreen = lockScreen
-
-    // Ensure our singleton is created as soon as possible so we start fetching weather asap
-    LocationService.init()
   }
 }

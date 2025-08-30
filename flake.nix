@@ -43,10 +43,7 @@
           ddcutil
           file
           findutils
-          gpu-screen-recorder
           libnotify
-          matugen
-          networkmanager
           wl-clipboard
         ];
 
